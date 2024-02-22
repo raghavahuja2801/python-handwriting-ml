@@ -85,6 +85,7 @@ labelNames += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 labelNames = [l for l in labelNames]
 
 # loop over the predictions and bounding box locations together
+# adding comments
 for (pred, (x, y, w, h)) in zip(preds, boxes):
 	# find the index of the label with the largest corresponding
 	# probability, then extract the probability and label
